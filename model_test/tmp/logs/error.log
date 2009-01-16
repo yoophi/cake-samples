@@ -1,0 +1,2 @@
+2008-12-31 11:42:13 Warning: Warning (2): Missing argument 1 for CakeTestCase::before(), called in /var/www/blueberry0/app/tests/cases/controllers/boards_controller.test.php on line 38 and defined in [CORE/cake/tests/lib/cake_test_case.php, line 333]
+2008-12-31 11:42:13 Warning: Warning (2): Missing argument 1 for CakeTestCase::after(), called in /var/www/blueberry0/app/tests/cases/controllers/boards_controller.test.php on line 43 and defined in [CORE/cake/tests/lib/cake_test_case.php, line 410]

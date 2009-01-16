@@ -1,0 +1,10 @@
+This is sample files for CakePHP Unittest.
+
+Fixture data is stored in Yaml format in 
+`test/fixtrues/yaml/<model-name>.yaml` and
+automaticaly loaded when cake testcase startup.
+
+It uses PEAR library `Horde/Yaml`. 
+You can find it from `vendors` folder.
+
+Sample model testcase is stored in `tests/cases/models`.

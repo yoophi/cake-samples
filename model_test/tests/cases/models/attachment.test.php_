@@ -1,0 +1,35 @@
+<?php 
+/* SVN FILE: $Id: attachment.test.php_,v 1.1 2008/12/29 10:33:44 yoophi Exp $ */
+/* Attachment Test cases generated on: 2008-12-29 15:12:29 : 1230530969*/
+App::import('Model', 'Attachment');
+
+class AttachmentTestCase extends CakeTestCase {
+	var $Attachment = null;
+	var $fixtures = array('app.attachment');
+
+	function startTest() {
+		$this->Attachment =& ClassRegistry::init('Attachment');
+	}
+
+	function testAttachmentInstance() {
+		$this->assertTrue(is_a($this->Attachment, 'Attachment'));
+	}
+
+	function testAttachmentFind() {
+		$this->Attachment->recursive = -1;
+		$results = $this->Attachment->find('first');
+		$this->assertTrue(!empty($results));
+
+		$expected = array('Attachment' => array(
+			'id'  => 1,
+			'post_id'  => 1,
+			'filename'  => 'Lorem ipsum dolor sit amet',
+			'size'  => 1,
+			'created'  => '2008-12-29 15:09:29',
+			'type'  => 'Lorem ipsum dolor sit amet',
+			'user_id'  => 1
+			));
+		$this->assertEqual($results, $expected);
+	}
+}
+?>

@@ -1,0 +1,31 @@
+<?php 
+/* SVN FILE: $Id: post_tag.test.php_,v 1.1 2008/12/29 10:33:44 yoophi Exp $ */
+/* PostTag Test cases generated on: 2008-12-29 15:12:31 : 1230530971*/
+App::import('Model', 'PostTag');
+
+class PostTagTestCase extends CakeTestCase {
+	var $PostTag = null;
+	var $fixtures = array('app.post_tag');
+
+	function startTest() {
+		$this->PostTag =& ClassRegistry::init('PostTag');
+	}
+
+	function testPostTagInstance() {
+		$this->assertTrue(is_a($this->PostTag, 'PostTag'));
+	}
+
+	function testPostTagFind() {
+		$this->PostTag->recursive = -1;
+		$results = $this->PostTag->find('first');
+		$this->assertTrue(!empty($results));
+
+		$expected = array('PostTag' => array(
+			'id'  => 1,
+			'post_id'  => 1,
+			'tag_id'  => 1
+			));
+		$this->assertEqual($results, $expected);
+	}
+}
+?>

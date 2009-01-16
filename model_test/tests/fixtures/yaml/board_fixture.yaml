@@ -1,0 +1,45 @@
+---
+-
+  id: 1
+  name: sample_bbs
+  title: Hello, world
+  theme: sample_theme
+  notices:
+  post_per_page: 10
+  perm_index: 1
+  perm_read: 1
+  perm_write: 1
+  perm_delete: 1
+  perm_notice: 1
+  perm_comment: 1
+  raw_converter: markdown
+  use_attachment: 1
+  use_captcha: 1
+  use_category: 1
+  use_notice: 1
+  use_secret_comment: 1
+  use_secret_post: 1
+  post_count: 0
+  created: 2008-12-29 15:09:29
+-
+  id: 2
+  name: sample_bbs2
+  title: Lorem ipsum dolor sit amet
+  theme: sample_theme
+  notices:
+  post_per_page: 10
+  perm_index: 1
+  perm_read: 1
+  perm_write: 1
+  perm_delete: 1
+  perm_notice: 1
+  perm_comment: 1
+  raw_converter: markdown
+  use_attachment: 1
+  use_captcha: 1
+  use_category: 1
+  use_notice: 1
+  use_secret_comment: 1
+  use_secret_post: 1
+  post_count: 0
+  created: 2008-12-29 15:09:29
