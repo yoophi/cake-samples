@@ -1,4 +1,4 @@
-# $Id: i18n.sql,v 1.1 2008/12/29 02:59:51 yoophi Exp $
+# $Id: i18n.sql 7945 2008-12-19 02:16:01Z gwoo $
 #
 # Copyright 2005-2008,	Cake Software Foundation, Inc.
 #

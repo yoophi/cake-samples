@@ -1,6 +1,6 @@
-<?php
-/* SVN FILE: $Id: posts_controller.test.php,v 1.2 2008/12/31 06:13:16 yoophi Exp $ */
-/* PostsController Test cases generated on: 2008-12-29 14:12:44 : 1230529664*/
+<?php 
+/* SVN FILE: $Id$ */
+/* PostsController Test cases generated on: 2009-01-20 14:01:47 : 1232428487*/
 App::import('Controller', 'Posts');
 
 class TestPosts extends PostsController {
@@ -9,7 +9,6 @@ class TestPosts extends PostsController {
 
 class PostsControllerTest extends CakeTestCase {
 	var $Posts = null;
-	var $fixtures = array('app.board');
 
 	function setUp() {
 		$this->Posts = new TestPosts();
@@ -20,9 +19,6 @@ class PostsControllerTest extends CakeTestCase {
 		$this->assertTrue(is_a($this->Posts, 'PostsController'));
 	}
 
-	function testPostsIndex() {
-		$this->testAction('/posts', array('fixturize'=>true));
-	}
 	function tearDown() {
 		unset($this->Posts);
 	}

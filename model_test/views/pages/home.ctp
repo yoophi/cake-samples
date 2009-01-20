@@ -1,4 +1,4 @@
-<h2>Sweet, "App" got Baked by CakePHP!</h2>
+<h2>Sweet, "Model Test" got Baked by CakePHP!</h2>
 
 <?php
 if (Configure::read() > 0):

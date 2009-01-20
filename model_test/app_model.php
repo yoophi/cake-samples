@@ -1,5 +1,5 @@
 <?php
-/* SVN FILE: $Id: app_model.php,v 1.2 2008/12/29 10:33:44 yoophi Exp $ */
+/* SVN FILE: $Id: app_model.php 7945 2008-12-19 02:16:01Z gwoo $ */
 
 /**
  * Application model for Cake.
@@ -21,9 +21,9 @@
  * @package       cake
  * @subpackage    cake.app
  * @since         CakePHP(tm) v 0.2.9
- * @version       $Revision: 1.2 $
+ * @version       $Revision: 7945 $
  * @modifiedby    $LastChangedBy: gwoo $
- * @lastmodified  $Date: 2008/12/29 10:33:44 $
+ * @lastmodified  $Date: 2008-12-18 20:16:01 -0600 (Thu, 18 Dec 2008) $
  * @license       http://www.opensource.org/licenses/mit-license.php The MIT License
  */
 
@@ -37,28 +37,5 @@
  * @subpackage    cake.app
  */
 class AppModel extends Model {
-
-	var $actsAs = array('Containable');
-
-	function __construct($id = false, $table = null, $ds = null) {
-		static $utf8Enabled = array();
-		if (!isset($utf8Enabled[$this->useDbConfig])) {
-			$db =& ConnectionManager::getDataSource($this->useDbConfig);
-			if (low(get_class($db)) == 'dbomysql') {
-				$db->execute('SET NAMES utf8');
-			}
-			$utf8Enabled[$this->useDbConfig] = true;
-		}
-		parent::__construct($id, $table, $ds);
-	}
-
-	function isUnique($data) {
-		list($field, $value) = each($data);
-		$key = $this->alias.'.'.$field;
-		$conditions = array($key => $value);
-
-		return !$this->hasAny($conditions);
-	}
-
 }
 ?>

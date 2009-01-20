@@ -1,5 +1,5 @@
 <?php
-/* SVN FILE: $Id: core.php,v 1.2 2008/12/29 10:33:44 yoophi Exp $ */
+/* SVN FILE: $Id: core.php 7945 2008-12-19 02:16:01Z gwoo $ */
 /**
  * This is core configuration file.
  *
@@ -19,9 +19,9 @@
  * @package       cake
  * @subpackage    cake.app.config
  * @since         CakePHP(tm) v 0.2.9
- * @version       $Revision: 1.2 $
+ * @version       $Revision: 7945 $
  * @modifiedby    $LastChangedBy: gwoo $
- * @lastmodified  $Date: 2008/12/29 10:33:44 $
+ * @lastmodified  $Date: 2008-12-18 20:16:01 -0600 (Thu, 18 Dec 2008) $
  * @license       http://www.opensource.org/licenses/mit-license.php The MIT License
  */
 /**
@@ -64,7 +64,7 @@
  * 'admin' 		-> admin_index() and /admin/controller/index
  * 'superuser' -> superuser_index() and /superuser/controller/index
  */
-	Configure::write('Routing.admin', 'admin');
+	//Configure::write('Routing.admin', 'admin');
 
 /**
  * Turn off all caching application-wide.
@@ -148,7 +148,7 @@
 /**
  * A random string used in security hashing methods.
  */
-	Configure::write('Security.salt', '068ad4713ca411f8a712b6c8225e4d596840da90');
+	Configure::write('Security.salt', '3c0cbf440a63261c3e6bd6292bd72aa5c8b23179');
 /**
  * Compress CSS output by removing comments, whitespace, repeating tags, etc.
  * This requires a/var/cache directory to be writable by the web server for caching.

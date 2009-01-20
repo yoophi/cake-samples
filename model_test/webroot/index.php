@@ -1,5 +1,5 @@
 <?php
-/* SVN FILE: $Id: index.php,v 1.1 2008/12/29 02:59:51 yoophi Exp $ */
+/* SVN FILE: $Id: index.php 7945 2008-12-19 02:16:01Z gwoo $ */
 /**
  * Short description for file.
  *
@@ -19,9 +19,9 @@
  * @package       cake
  * @subpackage    cake.app.webroot
  * @since         CakePHP(tm) v 0.2.9
- * @version       $Revision: 1.1 $
+ * @version       $Revision: 7945 $
  * @modifiedby    $LastChangedBy: gwoo $
- * @lastmodified  $Date: 2008/12/29 02:59:51 $
+ * @lastmodified  $Date: 2008-12-18 20:16:01 -0600 (Thu, 18 Dec 2008) $
  * @license       http://www.opensource.org/licenses/mit-license.php The MIT License
  */
 /**
@@ -55,7 +55,7 @@
  *
  */
 	if (!defined('CAKE_CORE_INCLUDE_PATH')) {
-		define('CAKE_CORE_INCLUDE_PATH', ROOT);
+		define('CAKE_CORE_INCLUDE_PATH', '/Users/yoophi/workspace/cake_1.2.0.7962');
 	}
 
 /**
